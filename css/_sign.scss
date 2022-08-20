@@ -1,0 +1,126 @@
+.sign-container{
+        height: 100vh;
+        padding-inline: $padding-inline;
+        background-image: radial-gradient(circle,#ECCCF8 , #F7E3EC , #FDFCF9);
+
+        .nav-bar{
+
+            .back-arrow{
+                display: flex;
+                border: 1px solid #D3D1D3 ;
+                border-radius: 5px;
+                padding:0.5rem 0.8rem;
+            }
+        }
+
+        section{
+
+            article{
+
+                h1{
+                    font-size: 2.1rem;
+                }
+
+                ul{
+                    margin-top: 1rem;
+                    line-height: 1.5em;
+
+                    li{
+
+                        margin-bottom: 1.5rem;
+                        span{
+                            font-weight: 700;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+
+            form{
+                background-color: white;
+                padding: 2rem;
+                border-radius: 5px;
+                margin-bottom: 2rem;
+
+
+                label{
+                    display: block;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    margin-top: 1.5rem;
+                }
+
+                input{
+                    width: 100%;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1.5px solid #D3D1D3 ;
+                    font-size: 1.1rem;
+                    margin-top: 0.5rem;
+
+                    &::placeholder{
+                        color: #9d9a9d;
+                    }
+                }
+
+                p{
+                    margin-top: 1rem;
+                    color: black;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+
+                    input{
+                        width: auto;
+                    }
+
+                    span{
+                        color: #664EFC;
+                        text-decoration: underline;
+                        text-decoration-thickness: 2px;
+                        font-weight: 700;
+                    }
+                }
+
+                .button{
+                    width: 100%;
+                    margin-top: 1.5rem;
+                    padding-block: 1rem;
+                    background-color: #664EFC;
+                    border: none;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 700;
+                    font-size: 1rem;
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 1440px) {
+    .sign-container{
+        padding-inline: 8rem;
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            margin-top: 5rem;
+
+
+            article{
+                h1{
+                    width: 75%;
+                }
+
+                ul{
+
+                    li{
+                        width: 55%;
+                    }
+                }
+            }
+        }
+    }
+}

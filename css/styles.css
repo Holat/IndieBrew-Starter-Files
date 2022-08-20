@@ -1,0 +1,440 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+p {
+  color: #6B6B6B;
+  line-height: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  background-color: #664EFC;
+  color: #FFFFFF;
+  border: none;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn a {
+  font-weight: 700;
+}
+
+.btn a span {
+  font-weight: 400;
+}
+
+.head {
+  padding-inline: 1.2rem;
+  background-image: linear-gradient(to bottom right, #ECCCF8, #F7E3EC, #FDFCF9 30%);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 1.1rem 2rem;
+  }
+  .head {
+    padding-inline: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .head {
+    padding-inline: 8rem;
+  }
+}
+
+.nav-bar {
+  justify-content: space-between;
+  padding-block: 1.5rem;
+  position: relative;
+}
+
+.nav-bar svg {
+  width: 132px;
+}
+
+.nav-bar .nav-toggle .open {
+  width: 22px;
+}
+
+.nav-bar .links {
+  position: absolute;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  top: 80%;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.144);
+  transition: transform 0.5s ease;
+  transform: translateX(150%);
+}
+
+.nav-bar .links ul {
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.nav-bar .active {
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar svg {
+    width: auto;
+  }
+  .nav-bar .nav-toggle {
+    display: none;
+  }
+  .nav-bar .links {
+    position: initial;
+    transform: translateX(0);
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+  }
+  .nav-bar .links ul {
+    flex-direction: row;
+  }
+}
+
+.feed {
+  flex-direction: column;
+}
+
+.feed article h1 {
+  font-size: 3.2rem;
+  line-height: 1.15em;
+}
+
+.feed article p {
+  margin-top: .8rem;
+}
+
+.feed article .btn {
+  margin-top: 1rem;
+}
+
+.feed article .avatars {
+  margin-top: 1.5rem;
+  width: 15rem;
+}
+
+.feed article p:nth-of-type(2) {
+  margin-top: 0.2rem;
+}
+
+.feed article p:nth-of-type(2) span {
+  color: #543bf7;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .feed {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 2.5rem;
+  }
+  .feed .tab-mockup {
+    width: 330px;
+  }
+  .feed article {
+    width: 80%;
+    align-self: flex-start;
+  }
+  .feed article h1 {
+    font-size: 3.4rem;
+  }
+  .feed article p {
+    font-size: 1.1rem;
+  }
+  .feed article .btn {
+    display: block;
+  }
+  .feed article .avatars {
+    width: 13rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feed {
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+  }
+  .feed .tab-mockup {
+    width: 50%;
+  }
+  .feed article {
+    align-self: center;
+  }
+}
+
+.section {
+  padding: 1.2rem;
+}
+
+.section .item {
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 4.5rem;
+}
+
+.section .item article h2 {
+  font-size: 2rem;
+}
+
+.section .item article p {
+  margin-block: 0.5rem;
+}
+
+.section .item article a {
+  color: #664EFC;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-inline: 1.2rem;
+  }
+  .section .item {
+    gap: 1rem;
+  }
+  .section .item img {
+    width: 38%;
+  }
+  .section .item article h2 {
+    font-size: 2.3rem;
+  }
+  .section .item article p {
+    font-size: 1.2rem;
+  }
+  .section .item article a {
+    font-size: 1.2rem;
+  }
+  .section .curate {
+    flex-direction: row-reverse;
+  }
+  .section .access {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-inline: 8rem;
+  }
+  .section .item {
+    justify-content: space-between;
+    gap: 5rem;
+  }
+}
+
+.footer {
+  padding-inline: 1.2rem;
+  padding-block: 5rem;
+  background-color: #FDFCF9;
+  flex-direction: column;
+}
+
+.footer .footer-head p:nth-of-type(1) {
+  margin-top: 0.6rem;
+}
+
+.footer .footer-head p:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+
+.footer .footer-links-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.footer .footer-links-cont .footer-link h3 {
+  font-weight: 700;
+}
+
+.footer .footer-links-cont .footer-link .link {
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-inline: 1.2rem;
+  }
+  .footer p {
+    font-size: 1.2rem;
+  }
+  .footer h3 {
+    font-size: 1.4rem;
+  }
+  .footer .footer-head {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-inline: 8rem;
+  }
+  .footer .footer-links-cont {
+    display: flex;
+    gap: 4rem;
+  }
+  .footer .footer-head {
+    width: 35%;
+  }
+}
+
+.sign-container {
+  height: 100vh;
+  padding-inline: 1.2rem;
+  background-image: radial-gradient(circle, #ECCCF8, #F7E3EC, #FDFCF9);
+}
+
+.sign-container .nav-bar .back-arrow {
+  display: flex;
+  border: 1px solid #D3D1D3;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
+}
+
+.sign-container section article h1 {
+  font-size: 2.1rem;
+}
+
+.sign-container section article ul {
+  margin-top: 1rem;
+  line-height: 1.5em;
+}
+
+.sign-container section article ul li {
+  margin-bottom: 1.5rem;
+}
+
+.sign-container section article ul li span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.sign-container section form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.sign-container section form label {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.sign-container section form input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #D3D1D3;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.sign-container section form input::placeholder {
+  color: #9d9a9d;
+}
+
+.sign-container section form p {
+  margin-top: 1rem;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.sign-container section form p input {
+  width: auto;
+}
+
+.sign-container section form p span {
+  color: #664EFC;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+}
+
+.sign-container section form .button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-block: 1rem;
+  background-color: #664EFC;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .sign-container {
+    padding-inline: 8rem;
+  }
+  .sign-container section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 5rem;
+  }
+  .sign-container section article h1 {
+    width: 75%;
+  }
+  .sign-container section article ul li {
+    width: 55%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

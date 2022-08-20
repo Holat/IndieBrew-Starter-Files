@@ -1,0 +1,78 @@
+.section{
+    padding: $padding-inline;
+
+
+    .item{
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 4.5rem;
+
+        article{
+            h2{
+                font-size: 2rem;
+            }
+
+            p{
+                margin-block: 0.5rem;
+            }
+
+            a{
+                color: #664EFC;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (min-width:768px){
+    .section{
+        padding-inline: $padding-inline;
+
+        .item{
+            gap: 1rem;
+
+            img{
+                width: 38%;
+            }
+
+            article{
+        
+                h2{
+                    font-size: 2.3rem;
+                }
+    
+                p{
+                   font-size: 1.2rem;
+                }
+    
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+
+
+        }
+
+        .curate{
+            flex-direction: row-reverse;
+        }
+
+        .access{
+            flex-direction: row;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .section{
+        padding-inline: 8rem ;
+
+        .item{
+            justify-content: space-between;
+            gap: 5rem;
+        }
+
+    }
+}
