@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -7,7 +11,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 ul {
@@ -30,7 +34,7 @@ button {
 }
 
 p {
-  color: #6B6B6B;
+  color: var(--greyText);
   line-height: 1.5em;
 }
 
@@ -40,58 +44,51 @@ img {
 
 .btn {
   background-color: #664EFC;
-  color: #FFFFFF;
+  color: var(--white);
   border: none;
   padding: 1rem 1.2rem;
   border-radius: 5px;
   font-size: 1rem;
 }
-
 .btn a {
   font-weight: 700;
 }
-
 .btn a span {
   font-weight: 400;
 }
 
 .head {
-  padding-inline: 1.2rem;
+  padding-inline: var(--padding-inline);
   background-image: linear-gradient(to bottom right, #ECCCF8, #F7E3EC, #FDFCF9 30%);
   background-repeat: no-repeat;
   overflow: hidden;
   padding-bottom: 8rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .btn {
     padding: 1.1rem 2rem;
   }
   .head {
-    padding-inline: 2.5rem;
+    padding-inline: var(--padding-inline);
   }
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90em) {
   .head {
     padding-inline: 8rem;
   }
 }
-
 .nav-bar {
   justify-content: space-between;
   padding-block: 1.5rem;
   position: relative;
 }
-
 .nav-bar svg {
   width: 132px;
 }
-
 .nav-bar .nav-toggle .open {
   width: 22px;
 }
-
 .nav-bar .links {
   position: absolute;
   background-color: white;
@@ -106,18 +103,16 @@ img {
   transition: transform 0.5s ease;
   transform: translateX(150%);
 }
-
 .nav-bar .links ul {
   flex-direction: column;
   gap: 1rem;
   font-weight: 500;
 }
-
 .nav-bar .active {
   transform: translateX(0%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .nav-bar svg {
     width: auto;
   }
@@ -137,33 +132,26 @@ img {
     flex-direction: row;
   }
 }
-
 .feed {
   flex-direction: column;
 }
-
 .feed article h1 {
   font-size: 3.2rem;
   line-height: 1.15em;
 }
-
 .feed article p {
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
-
 .feed article .btn {
   margin-top: 1rem;
 }
-
 .feed article .avatars {
   margin-top: 1.5rem;
   width: 15rem;
 }
-
 .feed article p:nth-of-type(2) {
   margin-top: 0.2rem;
 }
-
 .feed article p:nth-of-type(2) span {
   color: #543bf7;
   font-weight: 700;
@@ -195,8 +183,7 @@ img {
     width: 13rem;
   }
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90em) {
   .feed {
     flex-direction: row-reverse;
     margin-top: 5rem;
@@ -208,33 +195,28 @@ img {
     align-self: center;
   }
 }
-
 .section {
-  padding: 1.2rem;
+  padding: var(--padding-inline);
 }
-
 .section .item {
   flex-direction: column;
   gap: 2rem;
   padding-bottom: 4.5rem;
 }
-
 .section .item article h2 {
   font-size: 2rem;
 }
-
 .section .item article p {
   margin-block: 0.5rem;
 }
-
 .section .item article a {
   color: #664EFC;
   font-weight: 700;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .section {
-    padding-inline: 1.2rem;
+    padding-inline: var(--padding-inline);
   }
   .section .item {
     gap: 1rem;
@@ -258,8 +240,7 @@ img {
     flex-direction: row;
   }
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90em) {
   .section {
     padding-inline: 8rem;
   }
@@ -268,43 +249,37 @@ img {
     gap: 5rem;
   }
 }
-
 .footer {
-  padding-inline: 1.2rem;
+  padding-inline: var(--padding-inline);
   padding-block: 5rem;
   background-color: #FDFCF9;
   flex-direction: column;
 }
-
 .footer .footer-head p:nth-of-type(1) {
   margin-top: 0.6rem;
 }
-
 .footer .footer-head p:nth-of-type(2) {
   margin-top: 1.5rem;
 }
-
 .footer .footer-links-cont {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   margin-top: 3rem;
 }
-
 .footer .footer-links-cont .footer-link h3 {
   font-weight: 700;
 }
-
 .footer .footer-links-cont .footer-link .link {
   margin-top: 0.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .footer {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    padding-inline: 1.2rem;
+    padding-inline: var(--padding-inline);
   }
   .footer p {
     font-size: 1.2rem;
@@ -316,8 +291,7 @@ img {
     width: 50%;
   }
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90em) {
   .footer {
     padding-inline: 8rem;
   }
@@ -329,52 +303,43 @@ img {
     width: 35%;
   }
 }
-
 .sign-container {
   height: 100vh;
-  padding-inline: 1.2rem;
+  padding-inline: var(--padding-inline);
   background-image: radial-gradient(circle, #ECCCF8, #F7E3EC, #FDFCF9);
 }
-
 .sign-container .nav-bar .back-arrow {
   display: flex;
   border: 1px solid #D3D1D3;
   border-radius: 5px;
   padding: 0.5rem 0.8rem;
 }
-
 .sign-container section article h1 {
   font-size: 2.1rem;
 }
-
 .sign-container section article ul {
   margin-top: 1rem;
   line-height: 1.5em;
 }
-
 .sign-container section article ul li {
   margin-bottom: 1.5rem;
 }
-
 .sign-container section article ul li span {
   font-weight: 700;
   font-size: 1.1rem;
 }
-
 .sign-container section form {
   background-color: white;
   padding: 2rem;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
-
 .sign-container section form label {
   display: block;
   font-weight: 700;
   font-size: 1rem;
   margin-top: 1.5rem;
 }
-
 .sign-container section form input {
   width: 100%;
   padding: 1rem;
@@ -384,29 +349,24 @@ img {
   font-size: 1.1rem;
   margin-top: 0.5rem;
 }
-
 .sign-container section form input::placeholder {
   color: #9d9a9d;
 }
-
 .sign-container section form p {
   margin-top: 1rem;
   color: black;
   font-size: 1.1rem;
   font-weight: 500;
 }
-
 .sign-container section form p input {
   width: auto;
 }
-
 .sign-container section form p span {
   color: #664EFC;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   font-weight: 700;
 }
-
 .sign-container section form .button {
   width: 100%;
   margin-top: 1.5rem;
@@ -419,7 +379,7 @@ img {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90em) {
   .sign-container {
     padding-inline: 8rem;
   }
@@ -437,4 +397,8 @@ img {
     width: 55%;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+:root {
+  --padding-inline: 1.2rem;
+  --greyText:#6B6B6B;
+  --white: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */

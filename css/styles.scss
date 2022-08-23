@@ -1,103 +1,24 @@
-$padding-inline : 1.2rem;
-$greyText :#6B6B6B;
-$white : #FFFFFF;
 
-*,
-*::after,
-*::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@forward "global";
+@forward  "navBar";
+@forward  "header";
+@forward "section";
+@forward "footer";
+@forward  "sign";
+
+
+:root{
+    --padding-inline : 1.2rem;
+    --greyText :#6B6B6B;
+    --white : #FFFFFF;
 }
 
 
 
-body{
-    font-family: 'DM Sans', sans-serif; 
-}
-
-ul{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-button{
-    font-family: inherit;
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-p{
-    color: $greyText;
-    line-height: 1.5em;
-}
-
-img{
-    width: 100%;
-}
 
 
 
-.btn{
-    background-color: #664EFC;
-    color: $white;
-    border: none;
-    padding: 1rem 1.2rem;
-    border-radius: 5px;
-    font-size: 1rem;
 
-    a{
-        font-weight: 700;
-
-        span{
-            font-weight: 400;
-        }
-    }
-
-}
-
-.head{
-    padding-inline: $padding-inline;
-    background-image: linear-gradient(to bottom right,#ECCCF8 , #F7E3EC , #FDFCF9 30%);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    padding-bottom: 8rem;
-}
-
-@media screen and (min-width:768px){
-    $padding-inline : 2.5rem;
-    .btn{
-        padding: 1.1rem 2rem;
-    }
-
-    .head{
-        padding-inline: $padding-inline; 
-    }
-}
-
-@media screen and (min-width:1440px) {
-    .head{
-        padding-inline: 8rem;
-    }
-}
-
-
-
-@import "./navBar";
-@import "./header";
-@import "./section";
-@import "./footer";
-
-
-@import "./sign"
 
 
 

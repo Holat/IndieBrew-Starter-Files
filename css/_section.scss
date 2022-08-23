@@ -1,5 +1,5 @@
 .section{
-    padding: $padding-inline;
+    padding: var(--padding-inline);
 
 
     .item{
@@ -26,9 +26,9 @@
 
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:48em){
     .section{
-        padding-inline: $padding-inline;
+        padding-inline: var(--padding-inline);
 
         .item{
             gap: 1rem;
@@ -65,7 +65,7 @@
     }
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width: 90em){
     .section{
         padding-inline: 8rem ;
 

@@ -1,6 +1,6 @@
 .sign-container{
         height: 100vh;
-        padding-inline: $padding-inline;
+        padding-inline: var(--padding-inline);
         background-image: radial-gradient(circle,#ECCCF8 , #F7E3EC , #FDFCF9);
 
         .nav-bar{
@@ -97,7 +97,7 @@
         }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90em) {
     .sign-container{
         padding-inline: 8rem;
 
