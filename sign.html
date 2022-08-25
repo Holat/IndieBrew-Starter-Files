@@ -43,11 +43,11 @@
             <form action="index.html">
                 <h1>Create your IndieBrew Account</h1>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                <input type="email" pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" name="email" id="email" placeholder="john@example.com" required>
                 <label for="fname">Full Name</label>
                 <input type="text" name="fname" id="fname" placeholder="John Doe" required>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="At least 8 characters" required>
+                <input type="password" title="Must be atleast 8 characters" pattern="[a-zA-Z0-9]{8,}" name="password" id="password" placeholder="At least 8 characters" required>
                 <p><input type="checkbox" name="" id="terms" required>
                     By creating an account on IndieBrew, you agree to the <span>Terms & Condition.</span>
                 </p>  
